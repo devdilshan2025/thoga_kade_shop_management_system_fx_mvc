@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="489.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerController.CustomerManegementFormController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="26.0" prefHeight="27.0" prefWidth="267.0" text="Customer Manegement">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="14.0" layoutY="81.0" prefHeight="161.0" prefWidth="669.0">
+        <columns>
+          <TableColumn prefWidth="69.3333158493042" text=" ID" />
+            <TableColumn prefWidth="80.6666488647461" text=" Title" />
+            <TableColumn prefWidth="57.333343505859375" text=" Name" />
+            <TableColumn prefWidth="100.66664123535156" text="Date Of Birth" />
+            <TableColumn prefWidth="71.33331298828125" text="Salary" />
+            <TableColumn prefWidth="65.99993896484375" text="Address" />
+            <TableColumn prefWidth="68.66659545898438" text="City" />
+            <TableColumn prefWidth="79.33331298828125" text="Province" />
+            <TableColumn prefWidth="73.33331298828125" text="Postal code" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

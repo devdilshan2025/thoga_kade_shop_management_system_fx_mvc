@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
    <children>
       <Label layoutX="70.0" layoutY="32.0" prefHeight="34.0" prefWidth="459.0" text="Thoga Kade Shop Management System">
@@ -13,9 +12,9 @@
             <Font name="Berlin Sans FB Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="467.0" layoutY="241.0" mnemonicParsing="false" text="Order Detail" />
-      <Button layoutX="64.0" layoutY="241.0" mnemonicParsing="false" text="Customer" />
-      <Button layoutX="204.0" layoutY="241.0" mnemonicParsing="false" text="Item " />
-      <Button layoutX="314.0" layoutY="241.0" mnemonicParsing="false" text="Place Order" />
+      <Button fx:id="btnOrderdetailManagement" layoutX="467.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnOrderdetailManagementOnAction" text="Order Detail" />
+      <Button fx:id="btnCustomerManegement" layoutX="64.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnCustomerManegementOnAction" text="Customer" />
+      <Button fx:id="btnItemManegement" layoutX="204.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnItemManegementOnAction" text="Item " />
+      <Button fx:id="btnPlaceorderManagement" layoutX="314.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnPlaceorderManagementOnAction" text="Place Order" />
    </children>
 </AnchorPane>
