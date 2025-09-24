@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.placeorderController.placeorderManagementFormController">
+   <children>
+      <Label layoutX="222.0" layoutY="23.0" text="Place Order">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="159.0" layoutY="87.0" prefHeight="228.0" prefWidth="247.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order Id" />
+          <TableColumn prefWidth="75.0" text="Order Date" />
+            <TableColumn prefWidth="105.33331298828125" text="Customer Id" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

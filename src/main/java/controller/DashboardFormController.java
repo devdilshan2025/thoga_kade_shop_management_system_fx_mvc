@@ -42,6 +42,12 @@ public class DashboardFormController {
 
     @FXML
     void btnItemManegementOnAction(ActionEvent event) {
+        try {
+            itemManagement.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemManagement.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        itemManagement.show();
 
     }
 
@@ -52,6 +58,12 @@ public class DashboardFormController {
 
     @FXML
     void btnPlaceorderManagementOnAction(ActionEvent event) {
+        try {
+            placeOrderManagement.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/placeOrderManagement.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        placeOrderManagement.show();
 
     }
 
