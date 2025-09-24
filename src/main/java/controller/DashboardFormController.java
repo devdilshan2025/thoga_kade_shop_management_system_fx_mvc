@@ -53,6 +53,12 @@ public class DashboardFormController {
 
     @FXML
     void btnOrderdetailManagementOnAction(ActionEvent event) {
+        try {
+            orderDetailManagement.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/orderDetail.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        orderDetailManagement.show();
 
     }
 
